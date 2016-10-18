@@ -32,6 +32,7 @@ public class FolderCardAnimation extends Animation{
         mCenterX = centerX;
 
         mCenterY = centerY;
+
     }
     ////用于确定内容是否开始变化  在动画开始之前调用
     public void setCanContentChange(){
@@ -66,13 +67,7 @@ public class FolderCardAnimation extends Animation{
                 if (listener != null) {
                     listener.contentChange(degrees);
                 }
-  /*
-            if (degrees>0) {
-                degrees = 270 + degrees - 90;
-            }else if (degrees<0){
-                degrees = -270+(degrees+90);
-            }
-        }*/
+
 
         camera.rotateX(degrees);
 
